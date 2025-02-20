@@ -1,0 +1,40 @@
+.layout{
+    display: block;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+    min-height: 100vh;
+    background-color: #C1C1C1;
+}
+
+.blankHeader {
+    height: 220px;
+    background-image: url('./hbg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-height: auto;
+    margin-bottom: 30px;
+}
+
+
+main {
+    min-height: 2000px;
+    overflow: hidden;
+}
+footer {
+    min-height: 80px;
+    margin-top: 50px;
+    background-color: #5f6769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav {
+}

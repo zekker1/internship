@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.mainContainer {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+select:hover {
+    cursor: pointer;
+}
+
+option:hover {
+    cursor: pointer;
+}
+
+.productImage {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Arvo", serif;
+    font-weight: bold;
+    font-style: normal;
+    min-height: 150px;
+    width: 200px;
+    color: #232E34;
+    position: relative;
+    font-size: 1em;
+}
+.productTitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    opacity: 0.8;
+    font-size: 1em;
+}
+.productPrice {
+    margin-top: auto;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+
+    li {
+       width: 100px;
+    }
+    .productImage{
+        width: 100px;
+        height: 150px;
+    }
+    .productDiv {
+        width: 100px;
+        height: 150px;
+    }
+    .productDetails{
+        min-height: 100px;
+        width: 100px;
+    }
+    .mainContainer {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .productDetails {
+        font-size: 0.8em;
+    }
+    .productTitle {
+        font-size: 0.8em;
+    }
+}
