@@ -1,2 +1,12 @@
 footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #efebe9;
+    text-decoration: none;
+}
+a:hover {
+    color: lightsteelblue;
 }
