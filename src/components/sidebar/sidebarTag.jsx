@@ -38,19 +38,19 @@ export default function SidebarTag({ setProducts }) {
 
     const DrawerList = (
         <Box sx={{ width: 250 }}
-             className="drawerbox"
+             className="drawer-box"
              role="presentation">
 
-            <h1 className="navh1">Rusty</h1>
+            <h1 className="nav-h1">Rusty</h1>
             <br/>
             <div className="search">
                 <input
-                    className="searchbar"
+                    className="search-bar"
                     placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button className="searchButton" onClick={handleSearch}><SearchIcon/></button>
+                <button className="search-button" onClick={handleSearch}><SearchIcon/></button>
             </div>
             <Divider/>
             <list>

@@ -1,16 +1,15 @@
-import SearchIcon from '@mui/icons-material/Search';
 import "./headerTag.css";
-import SidebarTag from "../SideBar/sidebarTag.jsx";
+import SidebarTag from "../sidebar/sidebarTag.jsx";
 import PersonIcon from '@mui/icons-material/Person';
 
 export default function HeaderTag({ setProducts }) {
     return (
         <header>
-            <div className="menuHeader">
+            <div className="menu-header">
                 <SidebarTag setProducts={setProducts} />
-                <button className="headerButton" onClick={() => window.location.reload()}>Rusty</button>
+                <button className="header-button" onClick={() => window.location.reload()}>Rusty</button>
 
-                <div className="header2">
+                <div className="login-link">
                     <PersonIcon style={{scale: "1.4"}} />
                 </div>
             </div>

@@ -2,7 +2,7 @@ import "./mainTag.css"
 import axios from "axios"
 import {useState} from "react";
 import {useEffect} from "react";
-import HeaderTag from "../Header/headerTag.jsx";
+import HeaderTag from "../header/headerTag.jsx";
 
 export default function MainTag() {
     const [products, setProducts] = useState([]);
@@ -17,16 +17,16 @@ export default function MainTag() {
     return (
         <main>
             <HeaderTag setProducts={setProducts} />
-            <div className="mainContainer">
+            <div className="main-container">
                 <ul className="ul">
                     {products.map((product) => (
                         <li key={product.id}>
-                            <div className="productDiv">
-                                <img src={product.image} alt="image" className="productImage"/>
+                            <div className="product-div">
+                                <img src={product.image} alt="image" className="product-image"/>
                             </div>
-                            <div className="productDetails">
-                                <div className="productTitle">{product.title}</div>
-                                <div className="productPrice">{product.price}$</div>
+                            <div className="product-details">
+                                <div className="product-title">{product.title}</div>
+                                <div className="product-price">{product.price}$</div>
                             </div>
                         </li>
                     ))}

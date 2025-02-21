@@ -1,4 +1,3 @@
-
 import "./footerTag.css";
 
 
@@ -8,7 +7,7 @@ export default function FooterTag() {
             <a href="">Contacts</a>
             <a href="">Privacy Policy</a>
             <a href="">Return and refund policy</a>
-            <a href="">Shipping info</a>
+            <a href="">Shipping</a>
         </footer>
     );
 }

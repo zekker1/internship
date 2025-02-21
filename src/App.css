@@ -1,14 +1,13 @@
 .layout{
     display: block;
     box-sizing: border-box;
-    /*overflow: hidden;*/
     min-height: 100vh;
     background-color: #C1C1C1;
 }
 
-.blankHeader {
+.blank-header {
     height: 220px;
-    background-image: url('./hbg.jpg');
+    background-image: url('../public/hbg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -21,11 +20,11 @@ header {
     margin-bottom: 30px;
 }
 
-
 main {
     min-height: 2000px;
     overflow: hidden;
 }
+
 footer {
     min-height: 80px;
     margin-top: 50px;
@@ -33,8 +32,4 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-nav {
 }

@@ -2,7 +2,7 @@
 
 
 
-.drawerbox {
+.drawer-box {
     background-color: #3c4245;
     height : 100%;
     color: #d7ccc8;
@@ -13,7 +13,7 @@
     user-select: none;
 }
 
-.navh1 {
+.nav-h1 {
     text-align: center;
     background-color: #31373A;
     width: 100%;
@@ -22,7 +22,7 @@
     box-shadow: 0 0 10px 10px #282D30;
 }
 
-.searchbar {
+.search-bar {
     height: 30px;
     max-width: 200px;
     border-radius: 10px;
@@ -34,7 +34,7 @@
     color: #efebe9;
     font-size: small;
 }
-.searchbar::placeholder {
+.search-bar::placeholder {
     color: #efebe9;
 
 }
@@ -48,17 +48,16 @@
     max-width: 250px;
 }
 
-.searchButton {
+.search-button {
     color: #efebe9;
     background-color: inherit;
     border: none;
     width: auto;
 }
-.searchButton:hover {
+.search-button:hover {
     cursor: pointer;
     scale: 1.2;
 }
-
 
 .listgap {
     display: flex;
@@ -70,31 +69,30 @@
     margin-bottom: 10px;
 }
 
-
-
 .listgap:hover {
     background-color: #282D30;
     cursor: pointer;
 }
 
 
+
 @media (max-width: 768px) {
     .MuiPaper-root{
         width: 200px;
     }
-    .drawerbox {
+    .drawer-box {
         max-width: 100%;
     }
     .search {
         max-width: 200px;
     }
-    .searchbar {
+    .search-bar {
         max-width: 150px;
     }
     .listgap {
         max-width: 100%;
     }
-    .navh1 {
+    .nav-h1 {
         max-width: 100%;
     }
 }
