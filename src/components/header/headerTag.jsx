@@ -7,8 +7,7 @@ export default function HeaderTag({ setProducts }) {
         <header>
             <div className="menu-header">
                 <SidebarTag setProducts={setProducts} />
-                <button className="header-button" onClick={() => window.location.reload()}>Rusty</button>
-
+                <a href="" className="header-button">Rusty</a>
                 <div className="login-link">
                     <PersonIcon style={{scale: "1.4"}} />
                 </div>
