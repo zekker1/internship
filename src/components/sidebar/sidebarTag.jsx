@@ -6,8 +6,6 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import MaleIcon from '@mui/icons-material/Male';
 import FemaleIcon from '@mui/icons-material/Female';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import WatchIcon from '@mui/icons-material/Watch';
 import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
