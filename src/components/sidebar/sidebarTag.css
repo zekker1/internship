@@ -2,7 +2,7 @@
 
 
 
-.drawer-box {
+.box-container {
     background-color: #3c4245;
     height : 100%;
     color: #d7ccc8;
@@ -13,11 +13,58 @@
     user-select: none;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #5f6769;
+    margin-bottom: 100px;
+    height: 80px;
+}
+
+.profile-button {
+    background-color: inherit;
+    border: none;
+    color: #d7ccc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+}
+.profile-button:hover {
+    cursor: pointer;
+    background-color: #3c4245;
+}
+
+.PersonIcon {
+    background-color: inherit;
+    color: inherit;
+    scale: 1.5;
+}
+
+.nav-button {
+    color: #d7ccc8;
+    background-color: inherit;
+    border: none;
+    height: 50px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nav-button:hover {
+    background-color: #3c4245;
+}
+
 .nav-h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #31373A;
     width: 100%;
-    height: 6%;
+    height: 80px;
     border-bottom: 1px solid #282D30;
     box-shadow: 0 0 10px 10px #282D30;
 }
@@ -28,9 +75,9 @@
     border-radius: 10px;
     outline: none;
     border: none;
-    box-shadow: 5px 5px 10px #3c4245;
+    box-shadow: 0 0 10px #282D30;
     padding: 10px;
-    background-color: #7F8586;
+    background-color: #5f6769;
     color: #efebe9;
     font-size: small;
 }
@@ -39,13 +86,12 @@
 
 }
 
-.search {
+.search{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
-    max-width: 250px;
+    margin: 10px;
 }
 
 .search-button {
@@ -62,11 +108,14 @@
 .listgap {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 15px 15% 15px 10%;
     gap: 10px;
     color: #d7ccc8;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .listgap:hover {
@@ -74,26 +123,60 @@
     cursor: pointer;
 }
 
+.open-drawer{
+    background-color: inherit;
+    color: #d7ccc8;
+    border: none;
+    scale: 1.5;
+}
+.open-drawer:hover {
+    cursor: pointer;
+    background-color: initial;
+}
+
+.close-drawer {
+    color: #d7ccc8;
+    background-color: inherit;
+    border: none;
+    scale: 1.5;
+    width: 100%;
+}
+.close-drawer:hover {
+    cursor: pointer;
+}
+
+.list-buttons {
+    width: 100%;
+    height: 100%;
+}
 
 
 @media (max-width: 768px) {
     .MuiPaper-root{
-        width: 200px;
+        max-height: 400px;
+    }
+    .box-container {
+        height: 100%;
     }
     .drawer-box {
-        max-width: 100%;
+        height:  50%;
+    }
+    .list1 {
+        height:  100px;
     }
     .search {
-        max-width: 200px;
+        height:  30px;
     }
     .search-bar {
-        max-width: 150px;
+        height:  30px;
     }
     .listgap {
-        max-width: 100%;
+        padding: 10px 15% 10px 10%;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .nav-h1 {
-        max-width: 100%;
+        height: 70px;
     }
 }
 

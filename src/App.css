@@ -17,12 +17,11 @@ header {
     top: 0;
     z-index: 1;
     min-height: auto;
-    margin-bottom: 30px;
 }
 
 main {
     min-height: 2000px;
-    overflow: hidden;
+
 }
 
 footer {
