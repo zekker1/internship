@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #efebe9;
+    text-decoration: none;
+}
+a:hover {
+    color: lightsteelblue;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
