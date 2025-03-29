@@ -9,10 +9,9 @@
 header {
     color: #efebe9;
     user-select: none;
-    font-family: "Bodoni Moda", serif;
 }
 
-.menu-header {
+.menuHeader {
     margin: 0;
     display: flex;
     justify-content: space-around;
@@ -24,7 +23,14 @@ header {
     height: 80px;
 }
 
-.header-button {
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 61px;
+}
+
+.headerButton {
     border: none;
     background-color: inherit;
     color: #efebe9;
@@ -34,15 +40,15 @@ header {
     font-size: 2.5rem;
 }
 
-.header-button:hover {
+.headerButton:hover {
     cursor: pointer;
 }
 
-.login-link {
+.signIcon {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    width: 61px;
 }
 
 select {
@@ -59,18 +65,17 @@ select:hover {
     background-color: #3c4245;
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .menu-header {
+    .menuHeader {
         height: auto;
     }
 
-    .header-button {
+    .headerButton {
         font-size: 2rem;
     }
 
-    .login-link {
-        gap: 10px;
+    .signIcon {
+
     }
 
     select {
@@ -80,11 +85,11 @@ select:hover {
 }
 
 @media (max-width: 480px) {
-    .header-button {
+    .headerButton {
         font-size: 1.5rem;
     }
 
-    .login-link {
+    .signIcon {
         gap: 5px;
     }
 

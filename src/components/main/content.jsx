@@ -1,11 +1,9 @@
-import {useState, useEffect} from "react";
-import axios from "axios";
-import * as React from "react";
-import "./allProducts.css";
-import SidebarTag from "../sidebar/sidebarTag.jsx";
+import "./content.css"
+import axios from "axios"
+import {useEffect, useState} from "react";
+import HeaderTag from "../header/headerTag.jsx";
 
-export default function AllProducts() {
-
+export default function Content() {
     const [products, setProducts] = useState([]);
     const [filter, setFilter] = useState(products);
 
@@ -24,8 +22,8 @@ export default function AllProducts() {
     }, []);
 
     return (
-        <>
-            <SidebarTag products={products}
+        <main>
+            <HeaderTag products={products}
                         setFilter={setFilter}/>
             <ul className="ul">
                 {filter.map((product) => (
@@ -46,6 +44,6 @@ export default function AllProducts() {
                     </li>
                 ))}
             </ul>
-        </>
-    )
+        </main>
+    );
 }

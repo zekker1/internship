@@ -1,14 +1,13 @@
 import './App.css'
-import MainTag from "./components/main/mainTag.jsx";
-import FooterTag from "./components/footer/footerTag.jsx";
-import HeaderTag from "./components/header/headerTag.jsx";
+import FooterTag from "./COMPONENTS/Footer/footerTag.jsx";
+import Home from "./pages/home.jsx";
+// import HeaderTag from "./COMPONENTS/Header/headerTag.jsx";
 
 function App() {
     return (
         <div className="layout">
             <div className="blank-header"/>
-            <HeaderTag/>
-            <MainTag/>
+            <Home/>
             <FooterTag/>
         </div>
     )

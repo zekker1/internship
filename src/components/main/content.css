@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -16,6 +18,10 @@ nav {
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+header {
+    margin-bottom: 80px;
 }
 
 ul {
@@ -47,7 +53,7 @@ li {
     font-family: "Arvo", serif;
     font-weight: bold;
     font-style: normal;
-    min-height: 150px;
+    min-height: 100px;
     width: 200px;
     color: #232E34;
     position: relative;
@@ -65,7 +71,7 @@ li {
 }
 
 .product-price {
-    margin-top: 20px;
+
     justify-self: center;
     align-self: center;
     width: 100%;
@@ -96,7 +102,7 @@ li {
         height: 150px;
     }
     .product-details{
-        min-height: 110px;
+        min-height: 80px;
         width: 100px;
     }
     .product-details {
