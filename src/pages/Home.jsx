@@ -1,7 +1,7 @@
 import Content from "../components/main/content.jsx"
 import "./home.css"
 
-export default function Home() {
+export default function HomeTag() {
     return (
         <main>
             <div>

@@ -1,4 +1,4 @@
-import "./sidebarTag.css"
+import "./sidebar.css";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -12,8 +12,11 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from "@mui/icons-material/Search";
 import WatchIcon from '@mui/icons-material/Watch';
 import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
+import { useContext } from 'react';
+import { ProductsContext } from '../API/ProductContext.jsx';
 
-export default function SidebarTag({products, setFilter}) {
+export default function SidebarTag() {
+    const { products, setFilter } = useContext(ProductsContext);
     const [open, setOpen] = React.useState(false);
     const [searchQuery, setSearchQuery] = React.useState("");
 
@@ -22,9 +25,9 @@ export default function SidebarTag({products, setFilter}) {
     };
 
     const filterProducts = (cat) => {
-        const upadtedList = products.filter((item)=> item.category === cat);
-        setFilter(upadtedList);
-    }
+        const updatedList = products.filter((item) => item.category === cat);
+        setFilter(updatedList);
+    };
 
     const handleSearch = (query) => {
         setSearchQuery(query);
@@ -35,12 +38,8 @@ export default function SidebarTag({products, setFilter}) {
     };
 
     const DrawerList = (
-        <Box sx={{ width: 250 }}
-             className="drawerbox"
-             role="presentation">
-
-            <a href=""
-               className="navh1">Rusty</a>
+        <Box sx={{ width: 250 }} className="drawerbox" role="presentation">
+            <a href="" className="navh1">Rusty</a>
             <br/>
             <div className="search">
                 <input
@@ -49,7 +48,7 @@ export default function SidebarTag({products, setFilter}) {
                     value={searchQuery}
                     onChange={(e) => handleSearch(e.target.value)}
                 />
-                <button className="searchButton" ><SearchIcon/></button>
+                <button className="searchButton"><SearchIcon/></button>
             </div>
             <Divider/>
             <list>
@@ -57,26 +56,26 @@ export default function SidebarTag({products, setFilter}) {
                     <MaleIcon style={{color: "#d7ccc8", scale: "1.2"}}/>
                     <p>Male</p>
                 </listButton>
-                <listButton className="listgap" onClick={() => filterProducts("women's clothing")} >
-                    <FemaleIcon style={{color: "#d7ccc8", scale: "1.2"}} />
+                <listButton className="listgap" onClick={() => filterProducts("women's clothing")}>
+                    <FemaleIcon style={{color: "#d7ccc8", scale: "1.2"}}/>
                     <p>Female</p>
                 </listButton>
             </list>
             <list>
                 <listButton className="listgap" onClick={() => filterProducts("jewelery")}>
-                    <WatchIcon style={{color: "#d7ccc8"}} />
+                    <WatchIcon style={{color: "#d7ccc8"}}/>
                     <p>Jewelery</p>
                 </listButton>
-                <listButton className="listgap" onClick={() => filterProducts("electronics")} >
-                    <DevicesOtherIcon style={{color: "#d7ccc8"}} />
+                <listButton className="listgap" onClick={() => filterProducts("electronics")}>
+                    <DevicesOtherIcon style={{color: "#d7ccc8"}}/>
                     <p>Electronics</p>
                 </listButton>
                 <listButton className="listgap">
-                    <FavoriteIcon style={{color: "#d7ccc8"}} />
+                    <FavoriteIcon style={{color: "#d7ccc8"}}/>
                     <p>Favorites</p>
                 </listButton>
                 <listButton className="listgap">
-                    <ShoppingCartIcon style={{color: "#d7ccc8"}} />
+                    <ShoppingCartIcon style={{color: "#d7ccc8"}}/>
                     <p>Cart</p>
                 </listButton>
             </list>
@@ -85,9 +84,8 @@ export default function SidebarTag({products, setFilter}) {
 
     return (
         <div className="nav">
-            <Button onClick={toggleDrawer(true)}
-                    style={{margin: "0", padding: "0"}}>
-                <MenuIcon style={{scale: "1.5", color:"#efebe9"}} />
+            <Button onClick={toggleDrawer(true)} style={{margin: "0", padding: "0"}}>
+                <MenuIcon style={{scale: "1.5", color:"#efebe9"}}/>
             </Button>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}

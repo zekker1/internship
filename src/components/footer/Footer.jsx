@@ -1,4 +1,4 @@
-import "./footerTag.css";
+import "./footer.css";
 
 
 export default function FooterTag() {
