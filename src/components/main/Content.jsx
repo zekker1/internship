@@ -9,9 +9,11 @@ export default function Content() {
         <main>
             <ul className="ul">
                 {filter.map((product) => (
-                    <li key={product.id}>
+                    <li className="product-item"
+                        key={product.id}>
                         <div className="product-div">
-                            <img src={product.image} alt="image" className="product-image"/>
+                            <img src={product.image} alt="image"
+                                 className="product-image"/>
                         </div>
                         <div className="product-details">
                             <div className="product-title">

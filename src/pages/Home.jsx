@@ -1,4 +1,4 @@
-import Content from "../components/main/content.jsx"
+import Content from "../components/main/Content.jsx"
 import "./home.css"
 
 export default function HomeTag() {

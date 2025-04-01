@@ -7,7 +7,7 @@ export default function HeaderTag() {
         <header>
             <div className="menuHeader">
                 <SidebarTag/>
-                <a href="" className="headerButton">Rusty</a>
+                <a href="" className="header-button">Rusty</a>
                 <div className="signIcon">
                     <PersonIcon style={{scale: "1.4"}} />
                 </div>

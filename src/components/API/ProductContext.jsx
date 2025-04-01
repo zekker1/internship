@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import "./product-context.css"
 
 export const ProductsContext = createContext();
 

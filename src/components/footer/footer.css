@@ -4,11 +4,11 @@ footer {
 }
 
 a {
-    color: #efebe9;
+    color: white;
     text-decoration: none;
 }
 a:hover {
-    color: lightsteelblue;
+    color: #AFD3E2;
 }
 
 @media (max-width: 768px) {

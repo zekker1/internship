@@ -38,8 +38,8 @@ export default function SidebarTag() {
     };
 
     const DrawerList = (
-        <Box sx={{ width: 250 }} className="drawerbox" role="presentation">
-            <a href="" className="navh1">Rusty</a>
+        <Box sx={{ width: 250 }} className="drawer-box" role="presentation">
+            <a href="" className="nav-h1">Rusty</a>
             <br/>
             <div className="search">
                 <input
@@ -48,34 +48,34 @@ export default function SidebarTag() {
                     value={searchQuery}
                     onChange={(e) => handleSearch(e.target.value)}
                 />
-                <button className="searchButton"><SearchIcon/></button>
+                <button className="search-button"><SearchIcon/></button>
             </div>
             <Divider/>
             <list>
-                <listButton className="listgap" onClick={() => filterProducts("men's clothing")}>
-                    <MaleIcon style={{color: "#d7ccc8", scale: "1.2"}}/>
+                <listButton className="list-gap" onClick={() => filterProducts("men's clothing")}>
+                    <MaleIcon style={{color: "white", scale: "1.2"}}/>
                     <p>Male</p>
                 </listButton>
-                <listButton className="listgap" onClick={() => filterProducts("women's clothing")}>
-                    <FemaleIcon style={{color: "#d7ccc8", scale: "1.2"}}/>
+                <listButton className="list-gap" onClick={() => filterProducts("women's clothing")}>
+                    <FemaleIcon style={{color: "white", scale: "1.2"}}/>
                     <p>Female</p>
                 </listButton>
             </list>
             <list>
-                <listButton className="listgap" onClick={() => filterProducts("jewelery")}>
-                    <WatchIcon style={{color: "#d7ccc8"}}/>
+                <listButton className="list-gap" onClick={() => filterProducts("jewelery")}>
+                    <WatchIcon style={{color: "white"}}/>
                     <p>Jewelery</p>
                 </listButton>
-                <listButton className="listgap" onClick={() => filterProducts("electronics")}>
-                    <DevicesOtherIcon style={{color: "#d7ccc8"}}/>
+                <listButton className="list-gap" onClick={() => filterProducts("electronics")}>
+                    <DevicesOtherIcon style={{color: "white"}}/>
                     <p>Electronics</p>
                 </listButton>
-                <listButton className="listgap">
-                    <FavoriteIcon style={{color: "#d7ccc8"}}/>
+                <listButton className="list-gap">
+                    <FavoriteIcon style={{color: "white"}}/>
                     <p>Favorites</p>
                 </listButton>
-                <listButton className="listgap">
-                    <ShoppingCartIcon style={{color: "#d7ccc8"}}/>
+                <listButton className="list-gap">
+                    <ShoppingCartIcon style={{color: "white"}}/>
                     <p>Cart</p>
                 </listButton>
             </list>
@@ -84,8 +84,10 @@ export default function SidebarTag() {
 
     return (
         <div className="nav">
-            <Button onClick={toggleDrawer(true)} style={{margin: "0", padding: "0"}}>
-                <MenuIcon style={{scale: "1.5", color:"#efebe9"}}/>
+            <Button className="menu-button"
+                    onClick={toggleDrawer(true)}
+                    style={{margin: "0", padding: "0"}}>
+                <MenuIcon style={{scale: "1.5",}}/>
             </Button>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}

@@ -2,23 +2,6 @@
 
 
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5f6769;
-    color: #d7ccc8;
-    font-family: "Arvo", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.1rem;
-    user-select: none;
-    margin-bottom: 100px;
-    height: 80px;
-    width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
 header {
     margin-bottom: 80px;

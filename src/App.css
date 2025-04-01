@@ -2,7 +2,6 @@
     display: block;
     box-sizing: border-box;
     min-height: 100vh;
-    background-color: #C1C1C1;
 }
 
 .blank-header {
@@ -27,7 +26,7 @@ main {
 footer {
     min-height: 80px;
     margin-top: 50px;
-    background-color: #5f6769;
+    background-color: #14213d;
     display: flex;
     justify-content: center;
     align-items: center;

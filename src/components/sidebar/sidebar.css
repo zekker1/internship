@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-
-
-.drawerbox {
-    background-color: #3c4245;
+.drawer-box {
+    background-color: #14213d;
     height : 100%;
-    color: #d7ccc8;
     font-family: "DM Mono", serif;
     font-weight: 500;
     font-style: normal;
@@ -13,15 +10,15 @@
     user-select: none;
 }
 
-.navh1 {
+.nav-h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    background-color: #31373A;
+    background-color: #0c162b;
     height: 6%;
-    border-bottom: 1px solid #282D30;
-    box-shadow: 0 0 10px 10px #282D30;
+    border-bottom: 1px solid #050b1a;
+    box-shadow: 0 0 10px 10px #050b1a;
 }
 
 .searchbar {
@@ -30,14 +27,15 @@
     border-radius: 10px;
     outline: none;
     border: none;
-    box-shadow: 5px 5px 10px #3c4245;
+    border-bottom: 1px solid #030612;
+    box-shadow: 0 8px 10px #030612;
     padding: 10px;
-    background-color: #7F8586;
-    color: #efebe9;
+    background-color: #e5e5e5;
+    color: black;
     font-size: small;
 }
 .searchbar::placeholder {
-    color: #efebe9;
+    color: black;
 
 }
 
@@ -50,41 +48,52 @@
     max-width: 250px;
 }
 
-.searchButton {
-    color: #efebe9;
+.search-button {
+    color: white;
     background-color: inherit;
     border: none;
     width: auto;
 }
-.searchButton:hover {
+.search-button:hover {
     cursor: pointer;
     scale: 1.2;
 }
 
 
-.listgap {
+.list-gap {
     display: flex;
     align-items: center;
     padding: 15px 15% 15px 10%;
     gap: 10px;
-    color: #d7ccc8;
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-
-
-.listgap:hover {
-    background-color: #282D30;
+.list-gap:hover {
+    color: white;
+    background-color: #3b4b6e;
     cursor: pointer;
 }
 
+.menu-button:hover {
+    background-color: inherit;
+}
+
+.MuiSvgIcon-root {
+    color: white;
+}
+.MuiSvgIcon-root:hover {
+    color: #AFD3E2;
+    cursor: pointer;
+    background-color: inherit;
+}
 
 @media (max-width: 768px) {
     .MuiPaper-root{
         width: 200px;
     }
-    .drawerbox {
+    .drawer-box {
         max-width: 100%;
     }
     .search {
@@ -93,10 +102,10 @@
     .searchbar {
         max-width: 150px;
     }
-    .listgap {
+    .list-gap {
         max-width: 100%;
     }
-    .navh1 {
+    .nav-h1 {
         max-width: 100%;
     }
 }
