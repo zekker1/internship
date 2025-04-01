@@ -29,12 +29,17 @@ export default function SidebarTag() {
         setFilter(updatedList);
     };
 
-    const handleSearch = (query) => {
-        setSearchQuery(query);
+    const handleSearch = () => {
         const updatedList = products.filter((item) =>
-            item.title.toLowerCase().includes(query.toLowerCase())
+            item.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
         setFilter(updatedList);
+    };
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
     };
 
     const DrawerList = (
@@ -46,9 +51,10 @@ export default function SidebarTag() {
                     className="searchbar"
                     placeholder="Search..."
                     value={searchQuery}
-                    onChange={(e) => handleSearch(e.target.value)}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={handleKeyDown}
                 />
-                <button className="search-button"><SearchIcon/></button>
+                <button className="search-button" onClick={handleSearch}><SearchIcon/></button>
             </div>
             <Divider/>
             <list>
